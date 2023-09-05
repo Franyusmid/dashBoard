@@ -9,6 +9,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "nodemon": "^3.0.1",
     "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "cookie-session": "^2.0.0",
+    "node-fetch": "^2.7.0",
+    "node-instagram": "^4.3.0",
+    "social-post-api": "^1.1.1"
   }
 }
