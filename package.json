@@ -13,6 +13,7 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
+    "chart.js": "^4.4.0",
     "cookie-session": "^2.0.0",
     "node-fetch": "^2.7.0",
     "node-instagram": "^4.3.0",
