@@ -17,6 +17,7 @@ export const generateExAPIChart2 = async () => {
         return b.popularity - a.popularity;
       })
       .slice(0, 10);
+      
 
     // Generación de gráfica
     const myChartAPIArea = document.querySelector('#mychart2');
