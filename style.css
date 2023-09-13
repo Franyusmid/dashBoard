@@ -83,8 +83,59 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	transition: .3s ease all;
+	font-size: 20px;
 }
 
 .pagination button:hover {
 	background: #137c32;
+}
+
+h1 {  
+
+	color: #fff;
+	background-color:#100a1f ;
+	display:flex;
+    justify-content: center;
+    align-items: center;
+	height: 100px;
+	font-size: 50px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+.loadButton button {
+
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+	font-size: 30px;
+	
+
+}
+
+.loadButton button:hover {
+
+	background: #137c32;
+}
+
+.loadButton{
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
 }

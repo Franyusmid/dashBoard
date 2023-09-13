@@ -1,5 +1,4 @@
-import { generateExAPIChart } from './grafico';
-import { generateExAPIChart2 } from './grafico2';
+
 import { loadMovie } from './Peliculas';
 
 
@@ -8,6 +7,3 @@ import { loadMovie } from './Peliculas';
 
 loadMovie();
 
-generateExAPIChart();
-
-generateExAPIChart2();

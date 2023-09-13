@@ -3,19 +3,37 @@
      obteniendo diferentes peliculas en cada API a medica que se ejecuta el evento de presionar el boton 
      sigiente */
 
+import { generateExAPIChart } from './grafico';
+import { generateExAPIChart2 } from './grafico2';
+
+generateExAPIChart();
+generateExAPIChart2();
+
+
 
 let page=1     
 const btnBefore=document.getElementById('btnBefore')
 const btnNext=document.getElementById('btnNext')
+const dashBord=document.getElementById('dashBord')
+
+
+dashBord.addEventListener('click',() =>{
+  
+    window.location="./dashboard.html"   
+     
+})
+
+
 
 btnNext.addEventListener('click',() =>{
-  
+ 
    
     if(page<7){ 
-        page += 1;
+        page ++ ;
         
 
     }
+    console.log(page)
     loadMovie()
 })
 
@@ -32,7 +50,6 @@ btnBefore.addEventListener('click',() =>{
     loadMovie()
     
 })
-
 // 1.se decontruye la API y se guarde en varibles para interpolar y una mejor lectura del codigo
 const baseUrl= "https://api.themoviedb.org/3/movie/popular?"/*  se corta la base de la URL hasta el signo de interrogacion para
 poder realiazar modificaciones*/
@@ -46,7 +63,7 @@ export const loadMovie= async()=> {
 
     // se atrapa los errores del servidor en la solicitud de la API
     try { 
-    const responseRAW = await fetch(`${baseUrl}${accessKey}${additionProperty}${language}`)
+    const responseRAW = await fetch(`${baseUrl}${accessKey}${additionProperty}${language}$&page=${page}`)
     console.log("Respuesta Cruda",responseRAW)
     
         // se crean los condiconales de los errores que se pueden presentar al Solictar la API

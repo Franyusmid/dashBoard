@@ -5,8 +5,9 @@ const accessKey = 'api_key=a8363138fc36bbcadc4ed748ae7ccc8f';
 const language = 'language=es-COL';
 
 export const generateExAPIChart2 = async () => {
+
   try {
-    // Generación de datos
+    // Generación de datosS
     const url = new URL(`${baseUrl}${accessKey}&${language}`);
     const response = await fetch(url.toString());
     const dataResponse = await response.json();
@@ -50,3 +51,5 @@ export const generateExAPIChart2 = async () => {
     console.error('Error al obtener datos de la API:', error);
   }
 };
+
+

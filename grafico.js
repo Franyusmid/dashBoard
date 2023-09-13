@@ -1,3 +1,4 @@
+
 import Chart from 'chart.js/auto';
 
 const baseUrl = 'https://api.themoviedb.org/3/movie/popular?';
