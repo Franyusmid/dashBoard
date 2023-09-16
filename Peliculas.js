@@ -5,16 +5,15 @@
 
 import { generateExAPIChart } from './grafico';
 import { generateExAPIChart2 } from './grafico2';
-
 generateExAPIChart();
 generateExAPIChart2();
 
 
 
-let page=1     
-const btnBefore=document.getElementById('btnBefore')
-const btnNext=document.getElementById('btnNext')
+
 const dashBord=document.getElementById('dashBord')
+
+
 
 
 dashBord.addEventListener('click',() =>{
@@ -22,6 +21,23 @@ dashBord.addEventListener('click',() =>{
     window.location="./dashboard.html"   
      
 })
+
+const buttonMovie=document.querySelector('#button-movie')
+console.log(buttonMovie)
+buttonMovie.addEventListener('click',() =>{
+  
+    window.location="./index.html" 
+     
+})
+
+
+
+
+let page=1     
+const btnBefore=document.getElementById('btnBefore')
+const btnNext=document.getElementById('btnNext')
+
+
 
 
 

@@ -7,3 +7,4 @@ import { loadMovie } from './Peliculas';
 
 loadMovie();
 
+

@@ -1,6 +1,11 @@
 
 import Chart from 'chart.js/auto';
 
+
+
+
+
+
 const baseUrl = 'https://api.themoviedb.org/3/movie/popular?';
 const accessKey = 'api_key=a8363138fc36bbcadc4ed748ae7ccc8f';
 const language = 'language=es-COL';
