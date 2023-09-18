@@ -8,27 +8,27 @@ import { generateExAPIChart2 } from './grafico2';
 generateExAPIChart();
 generateExAPIChart2();
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    
+    const dashBord = document.getElementById('dashBord');
+    const buttonMovie = document.getElementById('buttonMovie');
 
+    if (dashBord) {
+        dashBord.addEventListener('click', () => {
+            window.location = "./dashboard.html";
+        });
+    } else {
+        console.error("Elemento con id 'dashBord' no encontrado");
+    }
 
-
-const dashBord=document.getElementById('dashBord')
-
-
-
-
-dashBord.addEventListener('click',() =>{
-  
-    window.location="./dashboard.html"   
-     
-})
-
-const buttonMovie=document.querySelector('#button-movie')
-console.log(buttonMovie)
-buttonMovie.addEventListener('click',() =>{
-  
-    window.location="./index.html" 
-     
-})
+    if (buttonMovie) {
+        buttonMovie.addEventListener('click', () => {
+            window.location = "./index.html";
+        });
+    } else {
+        console.error("Elemento con id 'buttonMovie' no encontrado");
+    }
+});
 
 
 
@@ -45,11 +45,11 @@ btnNext.addEventListener('click',() =>{
  
    
     if(page<7){ 
-        page ++ ;
+        page +=1 ;
         
 
     }
-    console.log(page)
+    // console.log(page)
     loadMovie()
 })
 

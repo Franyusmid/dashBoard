@@ -18,5 +18,8 @@
     "node-fetch": "^2.7.0",
     "node-instagram": "^4.3.0",
     "social-post-api": "^1.1.1"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
   }
 }
